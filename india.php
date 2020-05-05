@@ -53,7 +53,7 @@
     <table class="table">
         <thead class="thead-dark">
         <tr>
-        <th scope="col">Countries</th>
+        <th scope="col">States</th>
         <th scope="col">Confirmed</th>
         <th scope="col">active</th>
         <th scope="col">Recovered</th>
@@ -69,9 +69,10 @@
             <tr>
             <th><?php echo $data['statewise'][$i]['state'];?></th>
             <td>
-            <?php echo $data['statewise'][$i]['confirmed'];
-            
-            ?>
+            <?php echo $data['statewise'][$i]['confirmed'];?>
+            <?php if($data['statewise'][$i]['deltaconfirmed']!=0){ ?>
+            <small class="text-danger pl-3"><i class="fas fa-arrow-up"></i><?php echo $data['statewise'][$i]['deltaconfirmed']; ?></small>
+            <?php } ?>
              </td>
              <td><?php echo $data['statewise'][$i]['active']; ?> </td>
             <td><?php echo $data['statewise'][$i]['recovered']; ?> </td>

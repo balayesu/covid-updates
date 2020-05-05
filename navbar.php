@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/png" href="images/download (3).png">
 <style>
 body {
   font-family: "Lato", sans-serif;
@@ -62,6 +63,8 @@ body {
   <a href="countries.php">World Tracker</a>
   <a href="hosp.php">Hospitals</a>
   <a href="contacts.php">Emergency Contacts</a>
+  <a href="tzones.php">Zones In TS</a>
+  <a href="apzones.php">Zones In AP</a>
   <a href="noti.php">Notifications & advisories</a>
 </div>
 

@@ -5,12 +5,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Covid Data</title>
+    <title>Covid-19 Updates</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/download (3).png">
     <link rel="stylesheet" href="w3.css">
   </head>
   <body>
@@ -22,6 +23,8 @@
   <a class="w3-bar-item w3-button" href="countries.php">World Tracker</a>
   <a class="w3-bar-item w3-button" href="hosp.php">Hospitals</a>
   <a class="w3-bar-item w3-button" href="contacts.php">Emergency Contacts</a>
+  <a class="w3-bar-item w3-button" href="tzones.php">Zones In TS</a>
+  <a class="w3-bar-item w3-button" href="apzones.php">Zones In AP</a>
   <a class="w3-bar-item w3-button" href="noti.php">Notifications & advisories</a>
 </div>
 

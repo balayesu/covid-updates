@@ -1,6 +1,6 @@
 <?php
     include "navbar.php";
-    include "nlogic.php";
+    include "zoneslogic.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,24 +33,35 @@
     <div class="container-fluid">
     <div class="table-responsive">
     <table class="table">
+    <thead class="thead-dark">
+        <tr>
+        <th scope="col">District Name</th>
+        <th scope="col">Zone</th>
+        <th scope="col">District Code</th>
+        </tr>
+        </thead>
         <tbody>
         <?php
-        $statescount=count($data['data']['notifications']);
+        $statescount=count($data['zones']);
         $i=0;
             while($i< $statescount){
         ?>
+            <?php
+            if($data['zones'][$i]['state']=="Telangana"){ ?>
             <tr>
-            <th><?php echo $data['data']['notifications'][$i]['title'];?></th>
+            <th><?php echo $data['zones'][$i]['district'];?></th>
             <td>
                 
-            <?php 
-            $h=$data['data']['notifications'][$i]['link'];
-            ?>
-            <form action="<?php echo $h;?>">
-            <button type="submit" class="btn btn-primary">Click Here</button>
-            </form>
+
+            <?php echo $data['zones'][$i]['zone']; ?>
             </td>
+            <td>
+                
+
+                <?php echo $data['zones'][$i]['districtcode']; ?>
+                </td>
             </tr>
+            <?php } ?>
         <?php
         $i++;
     }?>

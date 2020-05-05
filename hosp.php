@@ -55,7 +55,7 @@
         <tbody>
         <?php
         $statescount=count($data['data']['regional']);
-        $i=1;
+        $i=0;
             while($i< $statescount){
         ?>
             <tr>
