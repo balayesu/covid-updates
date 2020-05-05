@@ -44,10 +44,10 @@
             <td>
                 
             <?php 
-            $h=$data['data']['notifications'][$i]['link'];
-            echo'<a href="$h">Click here</a>';
-            
-            ?></td>
+            $h=$data['data']['notifications'][$i]['link'];?>
+            <form action="<?php echo $h;?>">
+            <button type="submit" class="btn btn-primary">click here</button>
+            </td>
             </tr>
         <?php
         $i++;
