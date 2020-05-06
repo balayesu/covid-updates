@@ -22,7 +22,7 @@
 </head>
 <body>
     <div class="container-fluid bg-light p-5 text-center my=3">
-    <h1>Notifications and Updates</h1>
+    <h1>Zones in TS</h1>
     <h5 class="text-muted">An opensource project to keep track of all covid-19 cases</h5>
     </div>
     </div>
@@ -50,11 +50,28 @@
             if($data['zones'][$i]['state']=="Telangana"){ ?>
             <tr>
             <th><?php echo $data['zones'][$i]['district'];?></th>
-            <td>
-                
-
-            <?php echo $data['zones'][$i]['zone']; ?>
+            <?php
+            if($data['zones'][$i]['zone']=="Red")
+            {
+            ?>
+            <td class="text-danger">
+            <?php echo $data['zones'][$i]['zone'];?>
             </td>
+            <?php } 
+            if($data['zones'][$i]['zone']=="Orange")
+            {
+            ?>
+            <td class="text-warning">
+            <?php echo $data['zones'][$i]['zone'];?>
+            </td>
+            <?php } 
+            if($data['zones'][$i]['zone']=="Green")
+            {
+            ?>
+            <td class="text-success">
+            <?php echo $data['zones'][$i]['zone'];?>
+            </td>
+            <?php } ?>
             <td>
                 
 
